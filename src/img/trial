@@ -1,0 +1,252 @@
+    <div class="card__container">
+      <div class="card w-40">
+        <div class="card__content text-center p-20  relative transition-transform duration-1000 text-white font-bold">
+          
+          <div class="card__front absolute flex items-center justify-center inset-0 top-0 bottom-0 right-0 left-0 p-8 bg-pink-600 ">
+            <h2>Front</h2>
+          </div>
+          <div class="card__back absolute flex items-center justify-center inset-0 top-0 bottom-0 right-0 left-0 p-8 bg-teal-500 ">
+            <h2>Back</h2>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    bg-[#505858]
+    text-[#b2babc]
+
+
+
+    <div class="card_container">
+        <div class="card flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 p-4 scrollbar-hide">
+            <div class="card__content relative transition-transform duration-1000">
+                <div class="card__front min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                <div class="card__back  min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+            </div>
+            <div class="card__content relative transition-transform duration-1000">
+                <div class="card__front min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                <div class="card__back  min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+            </div>
+            <div class="card__content relative transition-transform duration-1000">
+                <div class="card__front min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                <div class="card__back  min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+            </div>
+            <div class="card__content relative transition-transform duration-1000">
+                <div class="card__front min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                <div class="card__back  min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+            </div>
+            <div class="card__content relative transition-transform duration-1000">
+                <div class="card__front min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                <div class="card__back  min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+            </div>
+            <div class="card__content relative transition-transform duration-1000">
+                <div class="card__front min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                <div class="card__back  min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+            </div>
+    </div>
+
+
+
+    Projects Section
+    <div class="flex justify-evenly lg:flex lg:justify-evenly w-full pl-2">
+        <!--<div class="w-full">-->
+            <div class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 p-4 scrollbar-hide">
+              <div class="min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card</div>
+              <div class="min-w-[90%] h-[400px] bg-[#505858] text-[#b2babc]  p-8 text-center rounded-lg snap-start">Project Card</div>
+              <div class="min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card</div>
+              <div class="min-w-[90%] bg-[#505858] text-[#b2babc] p-8 text-center rounded-lg snap-start">Project Card</div>
+              <div class="min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card</div>
+              <div class="min-w-[90%] bg-[#505858] text-[#b2babc] p-8 text-center rounded-lg snap-start">Project Card</div>
+            </div>
+        </div>
+    <!--</div>-->
+
+
+
+
+    <div class="flex justify-evenly lg:flex lg:justify-evenly w-full pl-2"> -->
+        <!--<div class="w-full">-->
+            <!--<div class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 p-4 scrollbar-hide">
+              <div class="min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card</div>
+              <div class="min-w-[90%] h-[400px] bg-[#505858] text-[#b2babc]  p-8 text-center rounded-lg snap-start">Project Card</div>
+              <div class="min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card</div>
+              <div class="min-w-[90%] bg-[#505858] text-[#b2babc] p-8 text-center rounded-lg snap-start">Project Card</div>
+              <div class="min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card</div>
+              <div class="min-w-[90%] bg-[#505858] text-[#b2babc] p-8 text-center rounded-lg snap-start">Project Card</div>
+            </div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+
+
+    Certificates Section
+
+    <section id="certifications" class="bg-[#123458] my-2 p-2 rounded-bl-3xl rounded-tr-3xl mx-auto md:w-full lg:[grid-row:_3_/_4_]">
+        <h2 class="md:pb-2 md:text-3xl md:flex md:justify-start text-xl font-bold hover:text-4xl">My Certifications</h2>
+            <div class="flex flex-col justify-evenly lg:flex lg:justify-evenly">
+                <div class="flex justify-around md:mb-4 mb-2 mt-2">
+                    <div>
+                        <details class="border-black border-2 p-4 active:text-xl active:text-[#F1EFEC] rounded-xl">
+                            <summary class="cursor-pointer list-none">
+                                <p class="md:text-2xl underline hover:text-3xl">HTML Certification</p>
+                            </summary>
+                            <div class="md:text-lg">
+                                Certificate Details
+                            </div>
+                            <br>
+                            <a href="./img/My Resume_SandeepKumar.pdf" download target="_blank" class="border-1 border-[#F1EFEC] rounded-4xl px-1 bg-black text-[#8c959e] active:bg-[#F1EFEC] active:text-[#123458]  active:border-[#F1EFEC] md:text-xl md:px-4 md:py-1 md:mx-3 lg:hover:bg-[#F1EFEC]lg:hover:text-[#123458] ">
+                                Download
+                              </a>
+                        </details>
+                    </div>
+                    <div>
+                        <details class="border-black border-2 p-4 active:text-xl active:text-[#F1EFEC] rounded-xl">
+                            <summary class="cursor-pointer list-none">
+                                <p class="md:text-2xl underline active:text-white hover:text-3xl">HTML Certification</p>
+                            </summary>
+                            <div class="md:text-lg">
+                                Certificate Details
+                            </div>
+                            <br>
+                            <a href="./img/My Resume_SandeepKumar.pdf" download target="_blank" class="border-1 border-[#F1EFEC] rounded-4xl px-1 bg-black text-[#8c959e] active:bg-[#F1EFEC] active:text-[#123458]  active:border-[#F1EFEC] md:text-xl md:px-4 md:py-1 md:mx-3 lg:hover:bg-[#F1EFEC]lg:hover:text-[#123458] ">
+                                Download
+                              </a>
+                        </details>
+                    </div>
+                </div>
+                <div class="flex justify-around mb-2 md:mb-4">
+                    <div>
+                        <details class="border-black border-2 p-4 active:text-xl active:text-[#F1EFEC] rounded-xl">
+                            <summary class="cursor-pointer list-none">
+                                <p class="md:text-2xl underline active:text-white hover:text-3xl">HTML Certification</p>
+                            </summary>
+                            <div class="md:text-lg">
+                                Certificate Details
+                            </div>
+                            <br>
+                            <a href="./img/My Resume_SandeepKumar.pdf" download target="_blank" class="border-1 border-[#F1EFEC] rounded-4xl px-1 bg-black text-[#8c959e] active:bg-[#F1EFEC] active:text-[#123458]  active:border-[#F1EFEC] md:text-xl md:px-4 md:py-1 md:mx-3 lg:hover:bg-[#F1EFEC]lg:hover:text-[#123458] ">
+                                Download
+                              </a>
+                        </details>
+                    </div>
+                    <div>
+                        <details class="border-black border-2 p-4 active:text-xl active:text-[#F1EFEC] rounded-xl">
+                            <summary class="cursor-pointer list-none">
+                                <p class="md:text-2xl underline active:text-white hover:text-3xl">HTML Certification</p>
+                            </summary>
+                            <div class="md:text-lg">
+                                Certificate Details
+                            </div>
+                            <br>
+                            <a href="./img/My Resume_SandeepKumar.pdf" download target="_blank" class="border-1 border-[#F1EFEC] rounded-4xl px-1 bg-black text-[#8c959e] active:bg-[#F1EFEC] active:text-[#123458]  active:border-[#F1EFEC] md:text-xl md:px-4 md:py-1 md:mx-3 lg:hover:bg-[#F1EFEC]lg:hover:text-[#123458] ">
+                                Download
+                              </a>
+                        </details>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+    flip card section (TO BE USED FOR CERTIFICATIONS)
+    <section id="services" class="bg-[#123458] my-2 p-2 rounded-bl-3xl rounded-tr-3xl mx-auto md:w-full">
+        <div class="card_container">
+            <div class="card flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 p-4 scrollbar-hide">
+                <div class="card__content relative transition-transform duration-1000">
+                    <div class="card__front min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                    <div class="card__back  min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+                </div>
+                <div class="card__content relative transition-transform duration-1000">
+                    <div class="card__front min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                    <div class="card__back  min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+                </div>
+                <div class="card__content relative transition-transform duration-1000">
+                    <div class="card__front min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                    <div class="card__back  min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+                </div>
+                <div class="card__content relative transition-transform duration-1000">
+                    <div class="card__front min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                    <div class="card__back  min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+                </div>
+                <div class="card__content relative transition-transform duration-1000">
+                    <div class="card__front min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                    <div class="card__back  min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+                </div>
+                <div class="card__content relative transition-transform duration-1000">
+                    <div class="card__front min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                    <div class="card__back  min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+                </div>
+        </div>
+    </section>
+
+
+
+
+    flip card 
+    
+    <div class="card__container">
+        <div class="card w-40">
+          <div class="card__content text-center relative p-20 transition-transform duration-1000 text-white font-bold">
+            <div class="card__front absolute  p-8 inset-0 bg-pink-600 flex items-center justify-center">
+              <h2>Front</h2>
+            </div>
+            <div class="card__back absolute inset-0  p-8 bg-teal-500 flex items-center justify-center">
+              <h2>Back</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <section id="about" class="m-0 p-0">
+        <h2 class="md:font-medium md:text-4xl underline pb-3  md:bg-gradient-to-l md:from-[rgba(0,_0,_0,_0.9)] md:via-[#949391] md:to-[rgba(0,_0,_0,_0.9)] md:bg-clip-text md:text-transparent animate-gradient">About Section</h2>
+        <div class="md:flex md:flex-col md:justify-evenly">
+        <!--<h3>Education here</h3>-->
+        <div class="md:py-6">
+                <span class="text-2xl">Some About details here  .... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sequi exercitationem nostrum maiores ipsum nesciunt, eius tenetur ab ducimus architecto at dicta! Aut omnis ea.</span>
+                <details class="md:pt-1  md:inline">
+                    <summary class="cursor-pointer list-none md:inline">
+                        <span class="text-2xl font-semibold active:text-xl lg:text-3xl hover:text-2xl">.....Read More</span>
+                    </summary>
+                    <div class="md:text-2xl">
+                        More Details here... lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                </details>
+        </div>
+    </section>
+    <section class="mt-6">
+        <h3>Education here</h3>
+        <div>
+            <span>Education level Senior, Higher, Bachelor</span>
+            <div>
+                <span>Education Institution</span>
+                <div class="flex">
+                    <span>Education level X, XII, Computer Appln</span>
+                    <time>Date of completionnnn</time>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+      ABOUT Section large screen original code

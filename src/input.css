@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+/* .flip-container {
+  perspective: 1000px; /* Adds 3D depth */
+/* }
+.flipper {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+.front, .back {
+  backface-visibility: hidden;
+}
+.back {
+  transform: rotateY(180deg);
+} */
+
+
+/* Vanilla CSS for flip card */
+.card { perspective: 800px;}
+.card__content {transform-style: preserve-3d;}
+.card:hover .card__content {transform: rotateY(.5turn);}
+
+.card__front,
+.card__back { backface-visibility: hidden;}
+.card__back{ transform: rotateY(.5turn);}
+
+
+
+.animate-grow {
+  animation: grow 2s ease-out forwards;
+}
+@keyframes grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--final-width);
+  }
+}
+
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientLoop 3s ease infinite;
+}
+
+@keyframes gradientLoop {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.animate-spin-thrice{
+  /* animation : spin 1s linear 3s infinite; */
+  /* animation : spin 1s linear 3s infinite alternate both running; */
+  /* animation : spin 1s linear 1; */
+  animation : spin 1s linear 1;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* @keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+  20% {
+    transform: rotate(360deg);
+  }
+  40% {
+    transform: rotate(360deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  80% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  } 
+  
+}*/
+
+  .animated-bubble {
+    /* opacity: 0; */
+    animation: bounceFade 3s infinite alternate ease-in-out;
+    /* will-change: transform;
+    z-index: 1; */
+  }
+  
+  @keyframes bounceFade {
+    0% { transform: translate(0, 0); opacity: 0.2; }
+    50% { transform: translate(-50px, -50px); opacity: 0.3; scale: 0.5px; }
+    100% { transform: translate(0, 0); }
+  }
+
+  @media (width >= 768px) {
+    .animated-bubble {
+      /* opacity: 0; */
+      animation: bounceFade 3s infinite alternate ease-in-out;
+      will-change: transform;
+      z-index: 1;
+    }
+    
+    @keyframes bounceFade {
+      0% { transform: translate(0, 0); opacity: 0.3; }
+      50% { transform: translate(-40px, -40px); opacity: 0.3; scale: 0.5px; }
+      100% { transform: translate(0, 0); }
+    }
+}
+
+@media (width >= 360px) {
+  .animated-bubble {
+    /* opacity: 0; */
+    animation: bounceFade 3s infinite alternate ease-in-out;
+  }
+  
+  @keyframes bounceFade {
+    0% { transform: translate(0, 0); opacity: 0.2; }
+    50% { transform: translate(-20px, -20px); opacity: 0.3; scale: 0.5px; }
+    100% { transform: translate(0, 0); }
+  }
+}
+
+  /* @keyframes bounceFade {
+    0% { transform: translate(-20px, 0); opacity: 1; }
+    20% { transform: translate(0, -10px); opacity: 0.80; }
+    40% { transform: translate(0, -20px); opacity: 0.65; }
+    50% { transform: translate(0, -30px); opacity: 0.5; }
+    60% { transform: translate(0, -20px); opacity: 0.65; }
+    80% { transform: translate(0px, -20px); opacity: 0.80; }
+    100% { transform: translate(0px, 0px); opacity: 1; }
+  } */
+
+
+  /*
+  @keyframes blob {
+    0% { clip-path: circle(50% at 50% 50%); }
+    10% { clip-path: polygon(289.3px 41px, 345.82px 14.62px, 416.11px 5.89px, 480.84px 11.79px, 538.91px 41px, 653px 98.4px, 712.9px 329.97px, 691.42px 369px, 691.42px 428.68px, 674.59px 512.69px, 635.16px 583.85px, 559.56px 608.62px, 459.22px 632.46px, 393.74px 619.42px, 328.26px 606.38px, 256.88px 568.42px, 204.75px 555.07px, 157.68px 535.51px, 117.13px 504.61px, 79.7px 448.35px, 79.38px 417.2px, 68.41px 384px, 50.54px 329.97px, 68.41px 280.94px, 103.75px 242.54px, 136.51px 175.54px, 174.01px 111.09px, 227.8px 69.7px);}
+    20% { clip-path: path('M74,12 C90,14 110,30 120,50 C130,70 130,100 100,110 C70,120 40,110 30,90 C20,70 30,30 50,20 C60,10 70,10 74,12 Z'); }
+    30% { clip-path: path('M74,12 C90,14 110,30 120,50 C130,70 130,100 100,110 C70,120 40,110 30,90 C20,70 30,30 50,20 C60,10 70,10 74,12 Z'); }
+    40% { clip-path: polygon(28.69% 27.19%, 38.13% 23.48%, 48.28% 23.48%, 56.43% 24.58%, 63.48% 30.62%, 68.31% 40.05%, 69.27% 51.12%, 66.36% 60.02%, 63.52% 65.89%, 59.75% 69.9%, 56.1% 72.39%, 51.04% 72.36%, 46.69% 73.59%, 35.79% 73.79%, 28.53% 71.28%, 23.37% 67.68%, 20.79% 58.65%, 18.2% 56.11%, 18.2% 49.63%, 20.86% 36.79%);}
+   
+    50% { clip-path: path('M74,12 C90,14 110,30 120,50 C130,70 130,100 100,110 C70,120 40,110 30,90 C20,70 30,30 50,20 C60,10 70,10 74,12 Z'); }
+    
+    60% { clip-path: polygon(28.69% 27.19%, 38.13% 23.48%, 48.28% 23.48%, 56.43% 24.58%, 63.48% 30.62%, 68.31% 40.05%, 69.27% 51.12%, 66.36% 60.02%, 63.52% 65.89%, 59.75% 69.9%, 56.1% 72.39%, 51.04% 72.36%, 46.69% 73.59%, 35.79% 73.79%, 28.53% 71.28%, 23.37% 67.68%, 20.79% 58.65%, 18.2% 56.11%, 18.2% 49.63%, 20.86% 36.79%);}
+    70% { clip-path: path('M74,12 C90,14 110,30 120,50 C130,70 130,100 100,110 C70,120 40,110 30,90 C20,70 30,30 50,20 C60,10 70,10 74,12 Z'); }
+    80% { clip-path: path('M74,12 C90,14 110,30 120,50 C130,70 130,100 100,110 C70,120 40,110 30,90 C20,70 30,30 50,20 C60,10 70,10 74,12 Z'); }
+    90% { clip-path: polygon(24.94% 24.33%, 32.92% 15.54%, 44.48% 12.85%, 54.43% 12.85%, 64.01% 15.54%, 73.09% 19.6%, 82.34% 32.11%, 85.74% 47.3%, 82.34% 64.09%, 74.81% 74.81%, 59.1% 79.48%, 37.15% 79.48%, 24.94% 74.81%, 20.86% 71.61%, 18.2% 64.09%, 18.2% 56.11%, 18.2% 49.63%, 18.2% 40.15%); }
+    100% { clip-path: circle(50% at 50% 50%); }
+  }
+    */
+
+html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }

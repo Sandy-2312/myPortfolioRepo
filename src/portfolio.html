@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo/light-bg/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Pacifico&display=swap" rel="stylesheet">
+    <!--<link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />-->
+    <title>My Portfolio</title>
+</head>
+<body class="h-screen m-0 p-0 box-border w-screen bg-[#F1EFEC] min-h-screen">
+    <header>
+        <nav class="bg-[#030303] text-[#D4C9BE] p-4 flex fixed w-full lg:w-full justify-between lg:flex md:p-6">
+            <div class="flex items-center">
+                <img class="h-8 w-8 md:h-20 md:w-20 animate-spin-thrice" src="./img/logo/light-bg/android-chrome-192x192.png" alt="Sandeep Kumar"/>
+                <div class="flex items-end md:flex md:items-end">
+                    <span class="text-lg italic md:py-4 md:pr-6 md:text-3xl md:[text-shadow:_2px_2px_2px_rgb(_212_201_190_)]">andeep Kumar</span>
+                </div>
+            </div>
+            <!--nav links-->
+            <div class="flex items-center">
+                <menu class="hidden lg:flex ">
+                    <ul class="flex items-center">
+                        <li class="p-4 text-[#D4C9BE] text-2xl hover:text-white hover:text-3xl"><a href="#home">Home</a></li>
+                        <li class="p-4 text-[#D4C9BE] text-2xl hover:text-white hover:text-3xl"><a href="#about">About</a></li>
+                        <li class="p-4 text-[#D4C9BE] text-2xl hover:text-white hover:text-3xl"><a href="#skills">Skills</a></li>
+                        <li class="p-4 text-[#D4C9BE] text-2xl hover:text-white hover:text-3xl"><a href="#projects">Projects</a></li>
+                        <li class="p-4 text-[#D4C9BE] text-2xl hover:text-white hover:text-3xl"><a href="#certifications">Certifications</a></li>
+                        <li class="p-4 text-[#D4C9BE] text-2xl hover:text-white hover:text-3xl"><a href="#contactMe">Contact Me</a></li>
+                    </ul>
+                </menu>
+            </div>
+
+            <!--Static dark/night toggle button-->
+            <div class="flex justify-evenly">   
+                <div class="p-4 pr-6 md:pt-5 md:pr-10">
+                    <!--<button class="md:text-3xl">Toggle</button>-->
+                    <label class="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" class="sr-only peer">
+                        <div class="relative w-11 h-6 md:w-18 md:h-10 md:mt-2 lg:w-16 lg:h-8 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-black dark:peer-focus:ring-black rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 md:after:w-9 md:after:h-9 lg:after:w-7 lg:after:h-7 after:transition-all dark:border-gray-600 peer-checked:bg-[#D4C9BE] dark:peer-checked:bg-[#D4C9BE]"></div>
+                        <!--<span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span>-->
+                    </label>
+                </div>
+
+                <div class="pt-1 md:pt-6 lg:hidden">
+                    <label class="relative z-40 px-3 py-4" for="mobile-menu">
+                    <input class="peer hidden" type="checkbox" id="mobile-menu" />
+                    <div class="relative z-50 block h-[1px] w-7 bg-transparent before:absolute before:top-[-0.35rem] before:z-50 before:block before:h-full before:w-full before:border-2 before:bg-[#D4C9BE]
+                        before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:right-0 after:bottom-[-0.35rem] after:block after:h-full after:w-full after:border-2 after:bg-[#D4C9BE] after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform">
+                    </div>
+                    <div class="fixed inset-0 z-40 hidden h-full w-full bg-black/50 backdrop-blur-sm peer-checked:block">
+                        &nbsp;
+                    </div>
+                    <div class="fixed top-0 right-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-checked:translate-x-0">
+                        <div class="float-right min-h-full w-[75%] md:w-[65%] bg-white px-6 pt-12 shadow-2xl">
+                            <menu class="flex flex-col justify-center items-center bg-slate-900 py-3 mt-4 pb-60 md:pb-100 md:pt-5 md:mt-10">
+                                <li class="text-white p-3 text-xl md:p-5 md:text-4xl "><a href="#home">Home</a></li>
+                                <li class="text-white p-3 text-xl md:p-5 md:text-4xl"><a href="#about">About</a></li>
+                                <li class="text-white p-3 text-xl md:p-5 md:text-4xl"><a href="#skills">Skills</a></li>
+                                <li class="text-white p-3 text-xl md:p-5 md:text-4xl"><a href="#projects">Projects</a></li>
+                                <li class="text-white p-3 text-xl md:p-5 md:text-4xl"><a href="#certifications">Certifications</a></li>
+                                <li class="text-white p-3 text-xl md:p-5 md:text-4xl"><a href="#contactMe">Contact Me</a></li>
+                            </menu>
+                        </div>
+                    </div>
+                    </label>
+                </div>
+            </div>   
+        </nav> 
+
+        <!--Home Section-->
+        <article id="home" class="pt-26 px-2 pb-2 md:pt-32 md:px-3 md:pb-3 lg:pt-35 lg:px-4 lg:pb-4 bg-gradient-to-t from-[#F1EFEC] to-[#123458] lg:bg-gradient-to-t lg:from-[#F1EFEC] lg:to-[#082442] h-full w-full lg:h-100px">
+            <!--<div class="fixed">-->
+            <div class="flex flex-col items-center p-3 md:m-3 md:px-2">
+                    <h1 class="inline-block md:pt-3 md:ml-2 md:px-3 text-3xl md:text-5xl lg:text-6xl lg:border-none font-semibold font-[Pacifico] text-[#083d76] md:border-2 md:rounded-2xl md:border-slate-500 p-2 [text-shadow:_6px_-5px_8px_rgb(_212_201_190_)]">Welcome !</h1>
+                    <marquee loop="0" class="w-[40%] lg:w-[25%]"><p>This is My Portfolio :)</p></marquee>
+            </div>
+            <div class="flex flex-col md:flex-row md:justify-between"> 
+                    <div class="flex flex-col justify-between  md:w-[30%] lg:m-0 lg:p-0 lg:px-15">
+                        <figure class="flex justify-center ml-8 md:flex md:justify-end md:ml-6 mt-4">
+                        <!--<div class="w-200 h-200">
+                        <img class="h-46 w-40 md:h-52 md:w-40 lg:h-70 lg:w-58 rounded-full object-cover animated-bubble" src="./img/prof_main_1.jpg" alt="Sandeep Kumar Dalai Profile Image Resume"/>-->
+                            <img class="h-48 w-40 mr-2 md:h-52 md:w-40 lg:h-70 lg:w-58 rounded-full object-cover animated-bubble" src="./img/prof_main_1.jpg" alt="Sandeep Kumar Dalai Profile Image Resume"/>
+                        <!--</div>-->
+                            <figcaption class="sr-only">Sandeep Kumar Dalai Profile Image</figcaption>
+                        </figure>
+                        <div class="flex justify-evenly lg:mr-2 lg:pr-4 md:pt-2 md:pr-4 md:ml-4 md:pl-4">
+                            <a href="" target="_blank">
+                            <i class="fa-brands fa-twitter p-2 md:p-1 md:text-xl lg:hover:text-2xl md:active:text-2xl lg:active:text-xl"></i>
+                            </a>
+                            <a href="" target="_blank">
+                            <i class="fa-brands fa-linkedin p-2 md:p-1 md:text-xl lg:hover:text-2xl active:text-2xl lg:active:text-xl"></i>
+                            </a>
+                            <a href="" target="_blank">
+                                <i class="fa-brands fa-instagram p-2 md:p-1 md:text-xl lg:hover:text-2xl active:text-2xl lg:active:text-xl"></i>
+                            </a>
+                            <a href="" target="_blank">
+                                <i class="fa-brands fa-github p-2 md:p-1 md:text-xl lg:hover:text-2xl active:text-2xl lg:active:text-xl"></i>
+                            </a>
+                            <a href="" target="_blank">
+                                <i class="fa-brands fa-discord p-2 md:p-1 md:text-xl lg:hover:text-2xl active:text-2xl lg:active:text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="pr-6  md:flex-1 lg:pr-0 lg:flex lg:grow-2 flex justify-center">
+                        <div class=" md:italic md:flex md:items-center">
+                            <p class="text-center mt-3 md:text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iusto neque repellat dolor facilis ea recusandae..</p>
+                        </div> 
+                    </div>
+            </div>
+            <!--</div>-->
+            <details class="flex flex-col items-end md:hidden">
+                <summary class="cursor-pointer list-none">
+                    <span class="text-black bg-gray-300 rounded-full px-2 hover:text-3xl active:text-2xl font-bold">About Me</span> <!--About Section mobile screen fixed dropdown-->
+                </summary>
+                <div class="bg-slate-900 text-gray-400 w-[99%] rounded-3xl p-2">
+                    <h2 class="flex justify-center mb-2 text-2xl">About Section</h2>
+                    <!--
+                    <div class="flex justify-between">
+                        <div>
+                            <img src="" alt=""/>Profile image here
+                            <p>Some About details here</p>
+                        </div>
+                        <div>
+                            <span>Education level Senior, Higher, Bachelor</span>
+                            <div>
+                                <span>Education Institution</span>
+                                <div class="flex">
+                                    <span>Education level X, XII, Computer Appln</span>
+                                    <time>Date of completionnnn</time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    
+                <section id="about" class="m-0 p-0 md:w-[58%] md:mt-12">
+                        <img src="./img/prof_about.jpg" alt="Sandeep Kumar" class="rounded-3xl mb-4"/>
+                        <div class="md:py-6">
+                            <span class="pt-3 text-lg md:text-2xl">Some About details here  .... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sequi exercitationem nostrum maiores ipsum nesciunt, eius tenetur ab ducimus architecto at dicta! Aut omnis ea.</span>
+                            <details class="md:pt-1 inline">
+                            <summary class="cursor-pointer list-none inline">
+                                <span>.....Read More</span>
+                            </summary>
+                            <div>
+                                More Details here
+                            </div>
+                            </details>
+                        </div>
+                </section>
+                <section class="mt-6 md:mt-0 md:flex-1 md:pr-20 md:w-[30%]">
+                    <h2 class="md:font-medium md:text-3xl underline pb-3  md:bg-gradient-to-l md:from-[rgba(0,_0,_0,_0.9)] md:via-[#949391] md:to-[rgba(0,_0,_0,_0.9)] md:bg-clip-text md:text-transparent animate-gradient">Education</h2>
+                    <div class="md:flex md:flex-col md:justify-evenly">
+                    <!--<h3>Education here</h3>-->
+                    <div>
+                        <div class="mb-2">
+                            <span class="underline">Bachelor's Degree</span>
+                            <div>
+                            <span>IGNOU</span>
+                            <div class="flex justify-between">
+                                    <span class="font-semibold md:pt-1">BCA</span>
+                                    <time class="font-semibold md:pt-2">Pursuing</time>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="underline">Bachelor</span>
+                            <div>
+                            <span>NIOS</span>
+                            <div class="flex justify-between">
+                                    <span class="font-semibold md:pt-1">XIIth</span>
+                                    <time class="font-semibold md:pt-2">2021</time>
+                            </div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="underline">Secondary Education</span>
+                            <div>
+                            <span>Kendriya Vidyalaya</span>
+                            <div class="flex justify-between">
+                                    <span class="font-semibold md:pt-1">Xth</span>
+                                    <time class="font-semibold md:pt-2">2017</time>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                </div>
+            </details>
+            <div class="flex justify-center p-3">
+                <a href="./img/My Resume_SandeepKumar.pdf" download target="_blank" class="border-2 border-black rounded-4xl px-2 bg-[#8c959e] text-black active:bg-[#123458] active:text-[#F1EFEC] active:border-[#F1EFEC] md:text-3xl md:px-6 md:py-1 lg:hover:bg-[#123458] lg:hover:text-[#F1EFEC]">
+                    Download CV
+                  </a>
+                <!--<button>Download CV button here</button>-->
+            </div>
+
+            <aside class="hidden md:flex md:flex-row-reverse md:justify-between md:p-10 md:m-0">
+                <section id="about" class="m-0 p-0 md:w-[40%] lg:hidden">
+                    <div class="md:flex md:justify-center md:items-center md:mb-2 md:bg-[#123458] md:w-52 md:h-52 md:rounded-full">
+                        <img src="./img/prof_about.jpg" alt="Sandeep Kumar" class="h-50 w-50 rounded-full md:p-4"/><!--Profile image here-->
+                    </div>
+                    <div>
+                        <div class="mb-2">
+                            <span class="underline">Bachelor's Degree</span>
+                            <div>
+                            <span>IGNOU</span>
+                            <div class="flex justify-between">
+                                    <span class="font-semibold md:pt-1">BCA</span>
+                                    <time class="font-semibold md:pt-2">Pursuing</time>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="underline">Bachelor</span>
+                            <div>
+                            <span>NIOS</span>
+                            <div class="flex justify-between">
+                                    <span class="font-semibold md:pt-1">XIIth</span>
+                                    <time class="font-semibold md:pt-2">2021</time>
+                            </div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="underline">Secondary Education</span>
+                            <div>
+                            <span>Kendriya Vidyalaya</span>
+                            <div class="flex justify-between">
+                                    <span class="font-semibold md:pt-1">Xth</span>
+                                    <time class="font-semibold md:pt-2">2017</time>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </section>
+                <section class="mt-6 md:mt-7  md:flex-1 md:pr-20 lg:hidden">
+                    <h2 class="md:font-medium md:text-4xl underline pb-3  md:bg-gradient-to-l md:from-[rgba(0,_0,_0,_0.9)] md:via-[#949391] md:to-[rgba(0,_0,_0,_0.9)] md:bg-clip-text md:text-transparent animate-gradient">About Section</h2>
+                    <div class="md:flex md:flex-col md:justify-evenly">
+                    <!--<h3>Education here</h3>-->
+                    <div class="md:py-6">
+                            <span class="text-2xl">Some About details here  .... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sequi exercitationem nostrum maiores ipsum nesciunt, eius tenetur ab ducimus architecto at dicta! Aut omnis ea.</span>
+                            <details class="md:pt-1  md:inline">
+                                <summary class="cursor-pointer list-none md:inline">
+                                    <span class="text-2xl font-semibold active:text-xl lg:text-3xl hover:text-2xl">.....Read More</span>
+                                </summary>
+                                <div class="md:text-2xl">
+                                    More Details here... lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                            </details>
+                    </div>
+                </section>
+            </aside>
+        </article>
+    </header>
+
+
+    <div class="m-0 w-screen p-0 pb-6 bg-gradient-to-b from-[#F1EFEC] to-[rgba(0,_0,_0,_0.9)]">
+        <div class="w-screen p-2 md:flex md:flex-col md:items-center md:p-0 md:m-0 lg:grid lg:grid-rows-[1fr_1fr_1fr] lg:grid-cols-[1fr_2fr_0px] lg:p-0 lg:m-0 overflow-hidden"> 
+            <aside class="hidden lg:grid lg:[grid-column:_1_/_2_] lg:[grid-row:_1_/_4_] md:bg-[#D4C9BE] lg:bg-[#D4C9BE] lg:p-8 lg:rounded-2xl lg:ml-6">
+                <section id="about" class="m-0 p-0 md:w-[40%] lg:w-[100%] lg:py-[18%]">
+                  
+                    <div class="lg:flex lg:flex-col lg:items-center">
+                        <h2 class="md:font-medium md:text-4xl underline pb-3  md:bg-gradient-to-l md:from-[rgba(0,_0,_0,_0.9)] md:via-[#949391] md:to-[rgba(0,_0,_0,_0.9)] md:bg-clip-text md:text-transparent animate-gradient">About Section</h2>
+                        <div class="md:flex md:justify-center md:items-center md:mb-2 md:bg-[#123458] md:w-52 md:h-52 md:rounded-full">
+                        <img src="./img/prof_about.jpg" alt="Sandeep Kumar" class="h-50 w-50 rounded-full md:p-4"/><!--Profile image here-->
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="mb-2">
+                            <span class="underline">Bachelor's Degree</span>
+                            <div>
+                            <span>IGNOU</span>
+                            <div class="flex justify-between">
+                                    <span class="font-semibold md:pt-1">BCA</span>
+                                    <time class="font-semibold md:pt-2">Pursuing</time>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <span class="underline">Bachelor</span>
+                            <div>
+                            <span>NIOS</span>
+                            <div class="flex justify-between">
+                                    <span class="font-semibold md:pt-1">XIIth</span>
+                                    <time class="font-semibold md:pt-2">2021</time>
+                            </div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="underline">Secondary Education</span>
+                            <div>
+                            <span>Kendriya Vidyalaya</span>
+                            <div class="flex justify-between">
+                                    <span class="font-semibold md:pt-1">Xth</span>
+                                    <time class="font-semibold md:pt-2">2017</time>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                </section>
+                <section class="mt-6 md:mt-7 md:flex-1 md:pr-20 lg:mt-0">
+                    <div class="md:flex md:flex-col md:justify-evenly">
+                    <!--<h3>Education here</h3>-->
+                    <div class="md:py-6 lg:text-justify">
+                            <span class="text-2xl">Some About details here  .... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis sequi exercitationem nostrum maiores ipsum nesciunt, eius tenetur ab ducimus architecto at dicta! Aut omnis ea.</span>
+                            <details class="md:pt-1  md:inline">
+                                <summary class="cursor-pointer list-none md:inline">
+                                    <span class="text-2xl font-semibold active:text-xl lg:text-3xl hover:text-2xl">.....Read More</span>
+                                </summary>
+                                <div class="md:text-2xl">
+                                    More Details here... lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </div>
+                            </details>
+                    </div>
+                </section>
+            </aside>
+
+            <main class="md:flex md:flex-col md:items-center md:justify-evenly lg:grid lg:[grid-column:_2_/_4_] lg:[grid-row:_1_/_4_] bg-gradient-to-t from-[#474c51] to-[#e8e7e4] lg:bg-gradient-to-t lg:from-[#474c51] lg:to-[#f3f2ef] text-gray-400">
+                <!--<div class="bg-[#F1EFEC]">-->
+                    <!--<section id="skills" class="bg-[#123458] my-2 p-2 rounded-bl-3xl rounded-tr-3xl lg:[grid-row:_1_/_2_]">-->
+                <section id="skills" class="bg-[#123458] my-2 p-4 rounded-bl-3xl rounded-tr-3xl max-w-lg md:max-w-2xl lg:max-w-3xl mx-auto shadow-lg md:w-full lg:[grid-row:_1_/_2_]">
+                        <h2 class="md:pb-4 md:text-3xl md:flex md:justify-start text-xl font-bold hover:text-4xl">My Skills</h2>
+                        
+                        <div class="mb-4">
+                            <span class="block text-sm md:text-2xl md:mb-2 font-medium text-gray-300">HTML</span>
+                            <div class="w-full bg-black rounded-full h-4 overflow-hidden">
+                                <div class="bg-[#D4C9BE] h-4 rounded-full w-0 animate-grow" style="--final-width: 90%;"></div>
+                            </div>
+                        </div>
+                      
+                        <div class="mb-4">
+                            <span class="block text-sm md:text-2xl md:mb-2 font-medium text-gray-300">CSS</span>
+                            <div class="w-full bg-black rounded-full h-4 overflow-hidden">
+                                <div class="bg-[#D4C9BE] h-4 rounded-full w-0 animate-grow" style="--final-width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <span class="block text-sm md:text-2xl md:mb-2 font-medium text-gray-300">JavaScript</span>
+                            <div class="w-full bg-black rounded-full h-4 overflow-hidden">
+                                <div class="bg-[#D4C9BE] h-4 rounded-full w-0 animate-grow" style="--final-width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <span class="block text-sm md:text-2xl md:mb-2 font-medium text-gray-300">HTML</span>
+                            <div class="w-full bg-black rounded-full h-4 overflow-hidden">
+                                <div class="bg-[#D4C9BE] h-4 rounded-full w-0 animate-grow" style="--final-width: 90%;"></div>
+                            </div>
+                        </div>
+                </section>
+                <!--</div>-->
+        
+                <section id="projects" class=" bg-[#123458] my-2 mr-0 p-2 rounded-bl-3xl rounded-tr-3xl md:max-w-2xl lg:max-w-3xl lg:[grid-row:_2_/_3_]">
+                    <h2 class="md:pb-2 md:text-3xl md:flex md:justify-start text-xl font-bold hover:text-4xl">Projects Section</h2>
+                    
+                    <div class="flex justify-evenly lg:flex lg:justify-evenly w-full pl-2">
+                        <!--<div class="w-full">-->
+                            <div class="flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 p-4 scrollbar-hide">
+                              <div class="min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card</div>
+                              <div class="min-w-[90%] h-[400px] bg-[#505858] text-[#b2babc]  p-8 text-center rounded-lg snap-start">Project Card</div>
+                              <div class="min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card</div>
+                              <div class="min-w-[90%] bg-[#505858] text-[#b2babc] p-8 text-center rounded-lg snap-start">Project Card</div>
+                              <div class="min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card</div>
+                              <div class="min-w-[90%] bg-[#505858] text-[#b2babc] p-8 text-center rounded-lg snap-start">Project Card</div>
+                            </div>
+                        </div>
+                    <!--</div>-->
+                    
+                </section>
+
+
+                <section id="certifications" class="bg-[#123458] my-2 p-2 rounded-bl-3xl rounded-tr-3xl lg:max-w-3xl mx-auto md:w-full lg:[grid-row:_3_/_4_]">
+                    <h2 class="md:pb-2 md:text-3xl md:flex md:justify-start text-xl font-bold hover:text-4xl">My Certifications</h2>
+                        <div class="flex flex-col justify-evenly lg:flex lg:justify-evenly lg:m-0 lg:p-0 lg:flex-wrap">
+                            <div class="block md:mb-4 mb-2 mt-2 lg:p-0 lg:m-0 lg:ml-20">
+                                <div class="lg:flex">
+                                    <div class="card__container">
+                                        <div class="card w-40">
+                                          <div class="card__content text-center relative p-20 transition-transform duration-1000 text-white font-bold">
+                                            <div class="card__front absolute  p-8 inset-0 bg-[#F1EFEC] flex items-center justify-center">
+                                              <h2>Front 1</h2>
+                                            </div>
+                                            <div class="card__back absolute inset-0  p-8 bg-black flex items-center justify-center">
+                                              <h2>Back</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <details class="border-black border-2 p-4 active:text-xl active:text-[#F1EFEC] rounded-xl lg:my-4 lg:mb-4 lg:mr-4">
+                                        <summary class="cursor-pointer list-none">
+                                            <p class="md:text-2xl underline hover:text-xl lg:text-xl">HTML Certification</p>
+                                        </summary>
+                                        <div class="md:text-lg">
+                                            Certificate Details
+                                        </div>
+                                        <br>
+                                        <a href="./img/My Resume_SandeepKumar.pdf" download target="_blank" class="border-1 border-[#F1EFEC] rounded-4xl px-1 bg-black text-[#8c959e] active:bg-[#F1EFEC] active:text-[#123458]  active:border-[#F1EFEC] md:text-xl md:px-4 md:py-1 md:mx-3 lg:hover:bg-[#F1EFEC]lg:hover:text-[#123458] ">
+                                            Download
+                                          </a>
+                                    </details>
+                                </div>
+                                <div class="lg:flex">
+                                    <div class="card__container">
+                                        <div class="card w-40">
+                                          <div class="card__content text-center relative p-20 transition-transform duration-1000 text-white font-bold">
+                                            <div class="card__front absolute  p-8 inset-0 bg-[#F1EFEC] flex items-center justify-center">
+                                              <h2>Front 2</h2>
+                                            </div>
+                                            <div class="card__back absolute inset-0  p-8 bg-black flex items-center justify-center">
+                                              <h2>Back</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <details class="border-black border-2 p-4 active:text-xl active:text-[#F1EFEC] rounded-xl lg:my-4 lg:mb-4 lg:text-md lg:mr-4">
+                                        <summary class="cursor-pointer list-none">
+                                            <p class="md:text-2xl underline active:text-white hover:text-xl lg:text-xl">HTML Certification</p>
+                                        </summary>
+                                        <div class="md:text-lg">
+                                            Certificate Details
+                                        </div>
+                                        <br>
+                                        <a href="./img/My Resume_SandeepKumar.pdf" download target="_blank" class="border-1 border-[#F1EFEC] rounded-4xl px-1 bg-black text-[#8c959e] active:bg-[#F1EFEC] active:text-[#123458]  active:border-[#F1EFEC] md:text-xl md:px-4 md:py-1 md:mx-3 lg:hover:bg-[#F1EFEC]lg:hover:text-[#123458] ">
+                                            Download
+                                          </a>
+                                    </details>
+                                </div>
+                            </div>
+                            <div class="block mb-2 md:mb-4 lg:m-0 lg:p-0">
+                                <div class="block">
+                                    <div class="card__container">
+                                        <div class="card w-40">
+                                          <div class="card__content text-center relative p-20 transition-transform duration-1000 text-white font-bold">
+                                            <div class="card__front absolute  p-8 inset-0 bg-[#F1EFEC] flex items-center justify-center">
+                                              <h2>Front 3</h2>
+                                            </div>
+                                            <div class="card__back absolute inset-0  p-8 bg-black flex items-center justify-center">
+                                              <h2>Back</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <details class="border-black border-2 p-4 active:text-xl active:text-[#F1EFEC] rounded-xl lg:my-4 lg:mb-4 lg:mr-4">
+                                        <summary class="cursor-pointer list-none">
+                                            <p class="md:text-2xl underline active:text-white hover:text-xl lg:text-xl">HTML Certification</p>
+                                        </summary>
+                                        <div class="md:text-lg">
+                                            Certificate Details
+                                        </div>
+                                        <br>
+                                        <a href="./img/My Resume_SandeepKumar.pdf" download target="_blank" class="border-1 border-[#F1EFEC] rounded-4xl px-1 bg-black text-[#8c959e] active:bg-[#F1EFEC] active:text-[#123458]  active:border-[#F1EFEC] md:text-xl md:px-4 md:py-1 md:mx-3 lg:hover:bg-[#F1EFEC]lg:hover:text-[#123458] ">
+                                            Download
+                                          </a>
+                                    </details>
+                                </div>
+                                <!--
+                                <div>
+                                    <div class="card__container">
+                                        <div class="card w-40">
+                                          <div class="card__content text-center relative p-20 transition-transform duration-1000 text-white font-bold">
+                                            <div class="card__front absolute  p-8 inset-0 bg-pink-600 flex items-center justify-center">
+                                              <h2>Front 4</h2>
+                                            </div>
+                                            <div class="card__back absolute inset-0  p-8 bg-teal-500 flex items-center justify-center">
+                                              <h2>Back</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <details class="border-black border-2 p-4 active:text-xl active:text-[#F1EFEC] rounded-xl">
+                                        <summary class="cursor-pointer list-none">
+                                            <p class="md:text-2xl underline active:text-white hover:text-3xl">HTML Certification</p>
+                                        </summary>
+                                        <div class="md:text-lg">
+                                            Certificate Details
+                                        </div>
+                                        <br>
+                                        <a href="./img/My Resume_SandeepKumar.pdf" download target="_blank" class="border-1 border-[#F1EFEC] rounded-4xl px-1 bg-black text-[#8c959e] active:bg-[#F1EFEC] active:text-[#123458]  active:border-[#F1EFEC] md:text-xl md:px-4 md:py-1 md:mx-3 lg:hover:bg-[#F1EFEC]lg:hover:text-[#123458] ">
+                                            Download
+                                          </a>
+                                    </details>
+                                </div>-->
+                            </div>
+                        </div>
+                </section>
+
+                <!--
+                <section id="certifications" class=" bg-[#123458] my-2 mr-0 p-2 rounded-bl-3xl rounded-tr-3xl md:max-w-2xl lg:max-w-4xl lg:[grid-row:_2_/_3_]">
+                    <h2 class="md:pb-2 md:text-3xl md:flex md:justify-start text-xl font-bold hover:text-4xl">Projects Section</h2>
+                    
+                    <div class="flex justify-evenly lg:flex lg:justify-evenly w-full pl-2">
+                        <div class="">
+                            <div class="card flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 p-4 scrollbar-hide">
+                                <div class="card__content relative transition-transform duration-1000">
+                                    <div class="card__front min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                                    <div class="card__back  min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+                                </div>
+                                <div class="card__content relative transition-transform duration-1000">
+                                    <div class="card__front min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                                    <div class="card__back  min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+                                </div>
+                                <div class="card__content relative transition-transform duration-1000">
+                                    <div class="card__front min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                                    <div class="card__back  min-w-[90%] bg-[#b2babc] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+                                </div>
+                                <div class="card__content relative transition-transform duration-1000">
+                                    <div class="card__front min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Front</div>
+                                    <div class="card__back  min-w-[90%] bg-[#505858] text-black p-8 text-center rounded-lg snap-start">Project Card Back</div>
+                                </div>
+                        </div>
+                    </div> 
+                </section>
+                -->
+            </main>
+        </div>
+
+        <!--<div class="bg-gray-500">-->
+        <article id="contactMe" class="lg:sticky box-border lg:top-0 flex flex-col items-center lg:flex lg:flex-col lg:items-start lg:px-20 lg:py-6 bg-[#dcd6d1] p-3 w-[80%] h-90 rounded-4xl border-2 m-4 ml-9 md:w-full md:m-0 md:rounded-b-sm md:h-138 lg:h-135">
+            <!--<h2>Contact Me</h2>-->
+            <p class="p-2 font-bold text-3xl md:text-4xl lg:ml-[36%] lg:mt-1 lg:text-5xl lg:mb-2">Message Me!</p>
+            <div class="lg:ml-25">
+                <form action="" method="" class="flex flex-col justify-center">
+                    <div class="lg:flex lg:justify-around">
+                        <div class="my-2 lg:flex lg:flex-col lg:mx-0 lg:mr-24">
+                            <label for="name" class="font-serif md:text-3xl">Name: </label>                        
+                            <input id="name" type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enter your name" name="fName" class="border-1 rounded-2xl p-2 h-6 mx-1 md:h-8 md:w-60 lg:w-100 lg:h-10 lg:px-4 lg:mx-0" />
+                        </div>
+                        <div class="my-2 lg:flex lg:flex-col">
+                            <label for="email" class="font-serif md:text-3xl">Email: </label>
+                            <input id="email" type="email" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enter your email" name="emailID" class="border-1 rounded-2xl p-2 h-6 w-51 md:h-8 md:w-60 lg:w-100 lg:h-10 lg:px-4 lg:mx-0" mx-1/>
+                        </div>
+                    </div>
+                        <label for="message" class="font-serif mt-3"></label>
+                        <p class="hidden lg:block lg:font-serif lg:text-3xl">Message: </p>
+                        <textarea id="message" rows="3" cols="25" placeholder="&nbsp;&nbsp;write a message" class="border-1 rounded-2xl p-2 md:h-40 lg:px-3 lg:h-30" name="userMessage"></textarea>
+                    
+                    <div class="flex justify-center m-2 lg:flex lg:flex-col">
+                            <label for="rating" class="font-serif p-2 md:text-3xl">Rate It!</label>  
+                            <input type="range" id="rating" min="0" max="5" name="userRating" class="border-black rounded-4xl bg-[#8c959e] text-black">
+                    </div>
+                    <div class="flex justify-center m-2 md:m-6 lg:ml-[9%]">  
+                        <input type="submit" value="Submit" class="border-2 border-black rounded-4xl px-2 bg-[#8c959e] text-black active:bg-[#123458] active:text-[#F1EFEC] active:border-[#F1EFEC] md:text-3xl md:px-6 md:py-1 lg:hover:bg-[#123458] lg:hover:text-[#F1EFEC]">
+                    </div>
+                </form>
+            </div>
+            <!--<div>
+                My contact details
+            </div>-->
+        </article>
+        <!--</div>-->
+    </div>
+
+      
+    <footer class="bg-[#030303] text-[#D4C9BE] p-4 bottom-0 w-full h-30 m-0 lg:hue-rotate-30 flex px-8">
+        <div>
+            <div>        
+                <a href="mailto:sandeepkumar1162b@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope p-2 md:p-4 md:text-3xl lg:hover:text-2xl"></i>
+                </a>
+                <a href="tel:+91 6239370502" target="_blank">
+                <i class="fa-solid fa-phone p-2 md:p-4 md:text-3xl lg:hover:text-2xl"></i>
+                </a>
+            </div>
+        <div>
+            Any other details or links
+        </div>
+    </footer>
+    <!--<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>-->
+</body>
+</html>
